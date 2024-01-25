@@ -4,7 +4,7 @@ RUN apk update
 RUN apk add go git bmake scdoc
 
 WORKDIR /tmp
-RUN git clone --depth 1 'https://git.sr.ht/~emersion/tlstunnel' 'tlstunnel'
+RUN git clone --depth 1 'https://github.com/c032/fork-tlstunnel' 'tlstunnel'
 
 WORKDIR /tmp/tlstunnel
 RUN bmake all
